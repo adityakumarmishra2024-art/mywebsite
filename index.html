@@ -5,89 +5,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My First Website</title>
+    <title>Love You Very Much Gulu ❤️</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+    <!-- Animated Background Video -->
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="love-background.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <!-- Dark Overlay -->
+    <div class="video-overlay"></div>
+
+    <!-- Floating Hearts -->
+    <div class="hearts">
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💓</span>
+        <span>💞</span>
+        <span>❤️</span>
+        <span>💘</span>
+        <span>💝</span>
+        <span>💗</span>
+    </div>
+
+
     <!-- Navigation -->
     <header>
         <nav class="navbar">
 
-            <h2 class="logo">MyWebsite</h2>
+            <h2 class="logo">
+                ❤️ Gulu
+            </h2>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">Our Love</a></li>
+                <li><a href="#memories">Memories</a></li>
+                <li><a href="#message">Message</a></li>
             </ul>
 
         </nav>
     </header>
 
 
-    <!-- Home Section -->
+    <!-- Home -->
     <section id="home" class="hero">
 
         <div class="hero-content">
 
-            <h1>Welcome to My Website</h1>
+            <div class="big-heart">
+                ❤️
+            </div>
+
+            <h1>
+                I Love You Very Much
+            </h1>
+
+            <h2>
+                Gulu ❤️
+            </h2>
 
             <p>
-                This is my first professional website.
+                You are one of the most beautiful parts of my life.
+                Every moment with you is special. 💕
             </p>
 
-            <button onclick="showMessage()">
-                Get Started
+            <button onclick="showLove()">
+                ❤️ Click For Love ❤️
             </button>
+
+            <div id="loveMessage"></div>
 
         </div>
 
     </section>
 
 
-    <!-- About Section -->
+    <!-- About -->
     <section id="about" class="section">
 
-        <h2>About Me</h2>
+        <div class="content-box">
 
-        <p>
-            Hello! My name is Aditya.
-            I am learning web development and programming.
-            This is my first website created using HTML, CSS and JavaScript.
-        </p>
+            <h2>💕 Our Love 💕</h2>
+
+            <p>
+                Gulu, I just want you to know that you are very special
+                to me. Your smile makes my day brighter and your presence
+                makes every moment more beautiful.
+            </p>
+
+            <p>
+                No matter how busy life becomes, you will always have
+                a special place in my heart. ❤️
+            </p>
+
+        </div>
 
     </section>
 
 
-    <!-- Services Section -->
-    <section id="services" class="section">
+    <!-- Memories -->
+    <section id="memories" class="section">
 
-        <h2>My Services</h2>
+        <h2>💖 Beautiful Memories 💖</h2>
 
         <div class="cards">
 
             <div class="card">
-                <h3>Web Design</h3>
+                <div class="card-icon">❤️</div>
+                <h3>First Moment</h3>
                 <p>
-                    I can create modern and responsive websites.
+                    Some moments become unforgettable because
+                    of the person who shares them with us.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Python</h3>
+                <div class="card-icon">🥰</div>
+                <h3>Your Smile</h3>
                 <p>
-                    I am learning Python programming and projects.
+                    Your smile is one of the sweetest things
+                    I could ever see.
                 </p>
             </div>
 
             <div class="card">
-                <h3>Programming</h3>
+                <div class="card-icon">💞</div>
+                <h3>Forever</h3>
                 <p>
-                    I enjoy creating software and solving problems.
+                    Wherever life takes us, you will always
+                    be special to me.
                 </p>
             </div>
 
@@ -96,24 +150,38 @@
     </section>
 
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <!-- Love Message -->
+    <section id="message" class="section message-section">
 
-        <h2>Contact Me</h2>
+        <div class="message-box">
 
-        <form onsubmit="sendMessage(event)">
+            <div class="heart-animation">
+                💗
+            </div>
 
-            <input type="text" id="name" placeholder="Enter your name" required>
+            <h2>
+                A Special Message For Gulu
+            </h2>
 
-            <input type="email" id="email" placeholder="Enter your email" required>
+            <p>
+                Gulu, I may not always have the perfect words,
+                but my heart knows one simple thing...
+            </p>
 
-            <textarea id="message" placeholder="Enter your message" required></textarea>
+            <h1>
+                I LOVE YOU VERY MUCH ❤️
+            </h1>
 
-            <button type="submit">
-                Send Message
+            <p>
+                You are precious, you are beautiful,
+                and you mean a lot to me. 💕
+            </p>
+
+            <button onclick="createHearts()">
+                💕 Send Love 💕
             </button>
 
-        </form>
+        </div>
 
     </section>
 
@@ -122,7 +190,11 @@
     <footer>
 
         <p>
-            © 2026 MyWebsite. All Rights Reserved.
+            Made with ❤️ for Gulu
+        </p>
+
+        <p>
+            © 2026 Love Website
         </p>
 
     </footer>
